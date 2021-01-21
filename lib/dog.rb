@@ -16,7 +16,7 @@ class Dog
     @@all.clear
   end
 
-  def self.print_all
+  def print_all
     @@all.each_char { |dog| puts dog.name }
   end
 
