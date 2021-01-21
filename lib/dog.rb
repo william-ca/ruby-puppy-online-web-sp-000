@@ -5,22 +5,22 @@ class Dog
 
   def initialize(name)
     @name = name
-    save
+    self.save
   end
 
   def self.all
     @@all
   end
 
-  def clear_all
+  def self.clear_all
     @@all = []
   end
 
-  def print_all
-    @@all
+  def self.print_all
+    @@all.each_char { |dog| puts dog.name  }
   end
 
-  def save
+  def self.save
     @@all << self
   end
 
